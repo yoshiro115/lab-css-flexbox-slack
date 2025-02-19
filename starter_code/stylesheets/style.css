@@ -34,7 +34,8 @@ body {
 }
 
 header,
-nav {
+nav,
+section:last-child {
   background-color: #540b51;
 }
 
@@ -217,9 +218,59 @@ li p:first-child{
     
     
 }
-p>span
+li>p>span
 {
     color:#540b51;
     font-size: 2.2rem;
     
+}
+
+section:last-child h3{
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding: 1.7rem;
+  text-align: center;
+  color: white;
+}
+
+section:last-child{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+section:last-child .btn:last-child{
+  background-color: #540b51;
+  color: white;
+  border: 1px solid white;
+
+}
+
+footer ul:first-child{
+  border-top: 2px solid rgba(173, 173, 173, 0.226);
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+footer ul{
+  display: flex;
+  margin: 1.5rem 1rem;
+  list-style: none;
+}
+footer ul:first-child{
+  flex-direction: column;
+}
+footer ul:first-child li{
+  margin-bottom: 1.3rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+footer ul:nth-last-child(2){
+  justify-content: space-between;
+  align-items: center;
+  
+}
+footer div{
+  font-size: 0.8rem;
+  text-align: center;
 }
